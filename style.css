@@ -35,7 +35,7 @@
 .buttons{
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 h1{
     text-align: center;
@@ -48,18 +48,23 @@ h1{
     padding: 10px 0;
     border-bottom:2px solid rgb(36, 57, 82) ;
     padding-left: 10px;
+    transition: all 1s ease-out;
 }
 ::-webkit-input-placeholder {
     color:   white;
  }
-li{
-    list-style: none;
-}
-.add , .del{
+.add{
     background: rgb(36, 57, 82);
     border-radius: 5px;
     border: 2px solid white;
     margin: 0 10px ;
     color: white;
     padding: 9px;
+}
+.wrap:hover{
+    display: flex;
+    padding: 10px 0;
+    border-bottom:2px solid rgb(36, 57, 82) ;
+    padding-left: 10px;
+    background: rgb(29, 148, 163);
 }

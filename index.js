@@ -1,11 +1,16 @@
 let input = document.querySelector("input");
 let add = document.querySelector(".add");
 let div = document.querySelector(".todo__task-op");
-let del = document.querySelector(".del");
+let tasks = [];
 
 add.addEventListener('click', ()=>{
-    div.innerHTML +=`<div class = "wrap">${input.value}</div>`;
+    let task = {id:tasks.length+1, decription:input.value };
+    // div.innerHTML +=`<div class = "wrap">${input.value}</div>`;
+
+    for (let i of tasks){
+
+    }
 })
 div.addEventListener('click', (e)=>{
-    e.target.remove()
+    e.target.remove();
 });
